@@ -1,6 +1,8 @@
+import Button from "./assets/Button"
+
 function About(){
     return(
-        <h1>Hehehe</h1>
+        <Button text="about us"/>
     )
 }
 
