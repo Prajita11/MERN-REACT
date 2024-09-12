@@ -9,7 +9,7 @@ function Home(){
        <>
         <nav className="navbar">
         <div className="container">
-            <a href="#" class="brand">My Website</a>
+            <a href="#" className="brand">My Website</a>
             <ul className="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><Link to="/about">About</Link></li>
