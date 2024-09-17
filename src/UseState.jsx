@@ -1,16 +1,24 @@
+import { useState } from "react"
 
 function UseState(){
-    var count = 0
-    const increaseCount = ()=>{
-        console.log("Clicked plus button")
-    }
+   const [count,setCount] = useState(0)
+   const [count2,setCount2] = useState(0)
+   const[data,setData] = useState({
+    name :"prajita",
+    age: 22
+   })
+   const increaseCount =  ()=>{
+    setCount(count+1)
+   }
+   const decreaseCount =() =>{
+    setCount(count-1)
+   }
 
-    const decreaseCount = ()=>{
-        console.log("clicked minus button")
-    }
+
     return(
         <>
             <h1>{count}</h1>
+            <h1>{data.name}</h1>
             <button onClick={increaseCount}>+</button>
             <button onClick={decreaseCount}>-</button>
         </>
